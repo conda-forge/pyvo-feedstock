@@ -31,7 +31,6 @@ test:
     - pyvo
     - pyvo.dal
     - pyvo.registry
-    - pyvo.tools
 
 about:
   home: http://pyvo.readthedocs.io/
