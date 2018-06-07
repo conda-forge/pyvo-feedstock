@@ -1,7 +1,7 @@
 {% set name = "pyvo" %}
-{% set version = "0.6.1" %}
+{% set version = "0.8" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "61f48b875a7eee77d21d9d768a01d7a0a76299cf84ec1517d15daedc20810e01" %}
+{% set hash_value = "35e5cbd1c927b8c5c4c86c13058822116ff88e7247718ed619bdc736be74f624" %}
 
 package:
   name: '{{ name|lower }}'
@@ -31,7 +31,8 @@ test:
     - pyvo
     - pyvo.dal
     - pyvo.registry
-    - pyvo.tools
+    - pyvo.io
+    - pyvo.utils
 
 about:
   home: http://pyvo.readthedocs.io/
