@@ -1,7 +1,7 @@
 {% set name = "pyvo" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "70a84b65bb7401e5c7ee7666b1d27999d9d374341a59de5ce5bf4789befe856d" %}
+{% set hash_value = "ddb5e524a39d397c2fe3e86cdeb73a3637f81d4c8419b93e7351fb50b07bab23" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
