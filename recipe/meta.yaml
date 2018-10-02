@@ -1,7 +1,7 @@
 {% set name = "pyvo" %}
-{% set version = "0.9" %}
+{% set version = "0.9.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "ddb5e524a39d397c2fe3e86cdeb73a3637f81d4c8419b93e7351fb50b07bab23" %}
+{% set hash_value = "1624333dfdf05485f19dc63298761e70e1727e88fdb22b74edcd54b1124eed2e" %}
 
 package:
   name: '{{ name|lower }}'
