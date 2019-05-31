@@ -26,6 +26,8 @@ requirements:
     - python
     - astropy
     - requests
+    - mimeparse
+    - six
 
 test:
   imports:
