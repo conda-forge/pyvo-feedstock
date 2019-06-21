@@ -24,7 +24,7 @@ requirements:
     - python
     - astropy
     - requests
-    - mimeparse
+    - python-mimeparse
     - six
 
 test:
