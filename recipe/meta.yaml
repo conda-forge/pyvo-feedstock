@@ -1,7 +1,6 @@
 {% set name = "pyvo" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "664cfffc1915c08513f9409a53595d00c8fa3c19ba867b5a998b30f281b564f3" %}
 
 package:
   name: '{{ name|lower }}'
@@ -10,7 +9,7 @@ package:
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: "54f8d8e6d314a73a7871f9dce1ba0a2d7d99faab885876a69358d2ebc1f8ed93"
 
 build:
   noarch: python
