@@ -1,7 +1,5 @@
 {% set name = "pyvo" %}
-{% set version = "0.9.2" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "664cfffc1915c08513f9409a53595d00c8fa3c19ba867b5a998b30f281b564f3" %}
+{% set version = "0.9.3" %}
 
 package:
   name: '{{ name|lower }}'
@@ -10,16 +8,15 @@ package:
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: "54f8d8e6d314a73a7871f9dce1ba0a2d7d99faab885876a69358d2ebc1f8ed93"
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: python setup.py install --offline --no-git --single-version-externally-managed --record=files.txt
 
 requirements:
   host:
-    - pip
     - python
     - setuptools
     - astropy
@@ -27,6 +24,8 @@ requirements:
     - python
     - astropy
     - requests
+    - python-mimeparse
+    - six
 
 test:
   imports:
@@ -51,7 +50,7 @@ about:
     secondary goal is to provide a development platform for migrating more VO
     capabilities into Astropy.
   doc_url: http://pyvo.readthedocs.io/
-  dev_url: https://github.com/pyvirtobs/pyvo
+  dev_url: https://github.com/astropy/pyvo
 
 extra:
   recipe-maintainers:
@@ -59,3 +58,6 @@ extra:
     - bsipocz
     - funbaker
     - RayPlante
+    - cbanek
+    - andamian
+    - jcsegovia
