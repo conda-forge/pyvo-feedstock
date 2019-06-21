@@ -17,7 +17,7 @@ build:
   script: python setup.py install --offline --single-version-externally-managed --record=record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - astropy
@@ -25,6 +25,7 @@ requirements:
     - python
     - astropy
     - requests
+    - python-mimeparse
 
 test:
   imports:
