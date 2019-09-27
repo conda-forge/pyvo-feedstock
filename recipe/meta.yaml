@@ -12,20 +12,21 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python setup.py install --offline --no-git --single-version-externally-managed --record=files.txt
-  skip: true  # [py27]
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - setuptools
     - astropy
+    - numpy >=1.14
   run:
-    - python
+    - python >=3.5
     - astropy
     - requests
     - python-mimeparse
+    - numpy >=1.14
 
 test:
   imports:
