@@ -17,16 +17,16 @@ build:
 
 requirements:
   host:
-    - python >= 3.5
+    - python >=3.5
     - setuptools
     - astropy
-    - numpy >= 1.14
+    - numpy >=1.14
   run:
-    - python >= 3.5
+    - python >=3.5
     - astropy
     - requests
     - python-mimeparse
-    - numpy >= 1.14
+    - numpy >=1.14
 
 test:
   imports:
