@@ -1,18 +1,18 @@
 {% set name = "pyvo" %}
-{% set version = "1.0" %}
+{% set version = "1.1" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c677003eb4cf332acbea5132005de9f3409b220428c7a96c7b189854d513ce1c
+  sha256: e14f527ecbec48b71d57f48f301ec6a809f886096114529cf2d1fdcbaf6deb2b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record=files.txt
 
 requirements:
