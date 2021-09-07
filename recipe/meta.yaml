@@ -9,10 +9,12 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: e14f527ecbec48b71d57f48f301ec6a809f886096114529cf2d1fdcbaf6deb2b
+  patches:
+    - 0001-Require-python-mimeparse.patch
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python setup.py install --offline --no-git --single-version-externally-managed --record=files.txt
 
 requirements:
