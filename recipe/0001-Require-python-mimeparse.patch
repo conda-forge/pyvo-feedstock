@@ -1,0 +1,25 @@
+From ee69f78d2d64cab3d2a938eda3b43a4741ecc6eb Mon Sep 17 00:00:00 2001
+From: Jakob van Santen <jvansanten@gmail.com>
+Date: Tue, 7 Sep 2021 13:46:30 +0200
+Subject: [PATCH] Require python-mimeparse
+
+---
+ setup.cfg | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.cfg b/setup.cfg
+index a5d131b..ba012f0 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -40,7 +40,7 @@ license = BSD
+ url = https://github.com/astropy/pyvo
+ edit_on_github = False
+ github_project = astropy/pyvo
+-install_requires = astropy requests mimeparse
++install_requires = astropy requests python-mimeparse
+ # version should be PEP440 compatible (http://www.python.org/dev/peps/pep-0440)
+ version = 1.1
+ 
+-- 
+2.30.2
+
