@@ -38,7 +38,7 @@ test:
 
 about:
   home: http://pyvo.readthedocs.io/
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: licenses/LICENSE.rst
   summary: Astropy affiliated package for accessing Virtual Observatory data and services
