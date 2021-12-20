@@ -1,5 +1,5 @@
 {% set name = "pyvo" %}
-{% set version = "1.1" %}
+{% set version = "1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e14f527ecbec48b71d57f48f301ec6a809f886096114529cf2d1fdcbaf6deb2b
-  patches:
-    - 0001-Require-python-mimeparse.patch
+  sha256: dcb9522198e56feda472b083f09861b6cd4b6e8ebe163417c5ddafce073857d1
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record=files.txt
 
 requirements:
@@ -40,7 +38,7 @@ test:
 
 about:
   home: http://pyvo.readthedocs.io/
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: licenses/LICENSE.rst
   summary: Astropy affiliated package for accessing Virtual Observatory data and services
