@@ -13,20 +13,17 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --offline --no-git --single-version-externally-managed --record=files.txt
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
-    - setuptools
-    - astropy
-    - numpy >=1.14
+    - python >=3.8
+    - setuptools_scm
+    - pip
   run:
-    - python >=3.5
-    - astropy
+    - python >=3.8
+    - astropy >=4
     - requests
-    - python-mimeparse
-    - numpy >=1.14
 
 test:
   imports:
