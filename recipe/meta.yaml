@@ -1,5 +1,5 @@
 {% set name = "pyvo" %}
-{% set version = "1.2.1" %}
+{% set version = "1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3630ad7c62acf9ce435a9b2d997376fa9fae6865ada6632735680c90ccf525e6
+  sha256: 846a54a05a8ddb47a8c2cc3077434779b0e4ccc1b74a7a5408593cb673307d67
 
 build:
   noarch: python
