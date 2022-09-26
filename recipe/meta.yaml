@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - astropy >=4
+    - astropy >=4.1
     - requests
 
 test:
