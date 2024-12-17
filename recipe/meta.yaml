@@ -1,5 +1,6 @@
 {% set name = "pyvo" %}
 {% set version = "1.6" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
