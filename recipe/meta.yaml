@@ -1,6 +1,6 @@
 {% set name = "pyvo" %}
 {% set version = "1.7" %}
-{% set python_min = "3.8" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - astropy-base >=4.1
+    - astropy-base >=4.2
     - requests
 
 test:
