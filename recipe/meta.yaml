@@ -1,5 +1,5 @@
 {% set name = "pyvo" %}
-{% set version = "1.8.1" %}
+{% set version = "1.9.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -9,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d3cc60aa3d3416d22c89e465a04dfa9f521085fdd5228cce2cffd2fee3a9e709
+  sha256: 5f285d90df96bae3074c5ca215995530af626208603c9246f016ed5c5cfc9cc0
 
 build:
   noarch: python
